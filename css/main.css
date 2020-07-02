@@ -1,9 +1,6 @@
 @charset "utf-8";
 
-
-.wrap {position: relative; overflow: hidden;}
-
-
+.header {position: absolute; left: 0; top: 0; width: 100%; z-index: 100; height: 100px;}
 
 .main-visual {position: relative; width: 100%;}
 .main-visual [class*="visual"] {position: relative;}
@@ -20,16 +17,14 @@
 .main-visual .info-text .desc {display: block; font-size: 1.4em; color: #c2c2c2;}
 
 .main-company {margin-top: 110px; height: 455px; background: #fff;}
-.main-company h2 {font-size: 3.4em; font-weight: 500; line-height: 1.2; color: #333;}
+.main-company h2 {font-size: 3.4em; font-weight: 500; line-height: 1.2;}
 
 .main-career {position: relative; height: 285px; text-align: center; color: #fff; background: url(../img/main_career_v3.png) 50% 100% no-repeat; background-size: cover; background-attachment: fixed;}
 .main-career h2 {padding: 60px 0 10px; font-size: 2.9em; font-weight: 300;}
 
 .main-news {padding: 70px 0; text-align: center; background: #f6f6f6;}
 .main-news .news_lst li a:hover h3 {color:#0078ff; }
-.main-news .news_lst li a .date,.main-news .news_lst li a .author {font-size: 1.1em; color: #999;}
-.main-news .news_lst li a .author {position: relative; padding-left: 5px;}
-.main-news .news_lst li a .author:before {content:'';position: absolute; }
+
 .main-news .news_lst li a .text {overflow: hidden; display: -webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; margin-top: 10px; font-size: 1.2em; font-weight: 300; line-height: 1.63; color: #666; }
 .main-news .news_lst li a:hover .text {color:#000;}
 
@@ -39,23 +34,15 @@
 .main-video .video_lst .photo:after {content:'';position: absolute; left: 0; top: 0; right: 0; bottom: 0; background:rgba(0,0,0,.5);}
 .main-video .video_lst li:hover .photo:after {background: rgba(0,0,0,0)}
 
-
-@media all and (max-width:1060px){
-    
-    
-}
 @media all and (max-width:900px){
     [class*="_lst"] li {width: 48.5%;}
     [class*="_lst"] li:first-child {margin-bottom: 35px;} 
-    [class*="_lst"] li.second {margin: 0 0 35px 3%;}
-    
-    
+    [class*="_lst"] li.second {margin: 0 0 35px 3%;}    
 }
 @media all and (max-width:690px){
     [class*="_lst"] li {width: 100%;}
     [class*="_lst"] li.second {margin: 0 0 35px 0;}
-    
-    
+      
 }
 @media all and (max-width:425px){
     [class*="btn0_"] {width: 115px; font-size: 12.6px;}
