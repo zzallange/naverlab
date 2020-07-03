@@ -1,16 +1,5 @@
-
-
-
-
 @charset "utf-8";
 
-[class*="key-words"] {}
-
-
-.keyword_wrap {float: left;width: 20%;}
-.keyword_wrap strong {display: block; margin-bottom: 20px; font-size: 1.1em; line-height: 1; letter-spacing: 1px;}
-
-.article_wrap {float: right; width: 75%; margin-bottom: 50px;}
 .article_wrap .main-news {padding-bottom: 40px; border-bottom: 1px solid #d2d2d2;}
 .article_wrap .main-news a {}
 .article_wrap .main-news a .photo {overflow: hidden; position: relative; width: 100%; height: 0; padding-bottom: 43.9%;}
@@ -19,7 +8,6 @@
 .article_wrap .main-news a .news-title {margin: 20px 0 15px; font-size: 2em; line-height: 1;}
 .article_wrap .main-news a:hover .news-title {color:#0078ff; }
  
-
 .main-news .swiper-pagination-bullets {bottom: 27px;}
 .main-news .swiper-pagination-bullet {width: 30px; height: 4px; background: #d9d8d7; border-radius: 0; opacity: 1; cursor: pointer;}
 .main-news .swiper-pagination-bullet-active {background:#0078ff}
@@ -37,19 +25,13 @@
 .news_wrap .news .news_link .text {overflow: hidden; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; height: 45px; font-size: 1.15em; font-weight: 300; line-height: 1.7; color: #666;}
 .news_wrap .news .news_link:hover .text {color: #000;}
 
-
-
 .news_wrap .news .key-words li {display: inline-block;}
 
 @media all and (max-width:1060px){
-    .article_wrap {width: 80%;}
     .news_wrap .news .news_link .photo {margin-left: 40px;}
 }
+
 @media all and (max-width:900px){
-    [class*="category-"] {padding: 0;}
-    .keyword_wrap,.article_wrap {float: none; width: 100%;}
-    .keyword_wrap {margin-bottom: 83px; padding: 0 30px;}
-    
     .article_wrap .main-news {border-bottom: 0 none; background: #f3f3f3;}
     .article_wrap .main-news a .news-title,.article_wrap .main-news .news_info {padding: 0 30px;}
     .article_wrap .main-news a .news-title {white-space: normal}
@@ -70,32 +52,6 @@
     .news_wrap .news .news_link .photo {float: none; margin: 0; width: 100%; height: 0; padding-bottom: 48.5%;}
     .news_wrap .news .news_link h3 {margin: 10px 0; font-size: 1.5em; line-height: 1.3;}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
