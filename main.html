@@ -42,8 +42,8 @@
                             <ul class="main_menu">
                                 <li><a href="story.html">STORY</a></li>
                                 <li><a href="#none">PROJECTS</a></li>
-                                <li><a href="#none">LOG</a></li>
-                                <li><a href="#none">PUBLICATIONS</a></li>
+                                <li><a href="log.html">LOG</a></li>
+                                <li><a href="publications.html">PUBLICATIONS</a></li>
                                 <li><a href="#none">CAREER</a></li>
                                 <li><a href="#none">CONTACT</a></li>
                                 <li><a href="#none"  class="btn_language">ENGLISH</a></li>
@@ -136,18 +136,27 @@
                     </article>
                     <article class="main-company">
                         <div class="ct_inner">       
-                        <div class="text-cont">
-                            <h2>WE ARE<br>
-                            AN AMBIENT INTELLIGENCE<br>
-                            COMPANY</h2>
-                            <p>네이버랩스의 비전인 생활환경지능은 사용자의 환경을 먼저 이해하고,
-                            사용자가 요구하기 전에 필요한 정보와 서비스를 앞서 제공할 수 있는 기술을 의미합니다.</p>
-                            <p>실제 사람들의 삶이 펼쳐지는 location에 대한 이해, 그리고 그 공간과 공간 사이를 연결해주는 mobility의 지능화에 집중하며 삶에 스며드는 솔루션을 제공하고자 합니다.</p>
-                        </div>
-                        <!--<div class="img-cont">
-                            <img src="img/main_company_car.png" alt="">
-                            <img src="img/main_company_robot.png" alt="">
-                        </div>-->
+                            <h2>
+                                <span class="cover-reveal text1">WE ARE</span>
+                                <br>
+                                <span class="cover-reveal text2">AN AMBIENT INTELLIGENCE</span>
+                                <br>
+                                <span class="cover-reveal text3">COMPANY</span>
+                            </h2>
+                            <p>
+                                <span class="cover-reveal text4">네이버랩스의 비전인 생활환경지능은 사용자의 환경을 먼저 이해하고,</span>
+                                <br>
+                                <span class="cover-reveal text5">사용자가 요구하기 전에 필요한 정보와 서비스를 앞서 제공할 수 있는 기술을 의미합니다.</span>
+                            </p>
+                            <p>
+                                <span class="cover-reveal text6">실제 사람들의 삶이 펼쳐지는 location에 대한 이해, 그리고 그 공간과 공간 사이를</span>
+                                <br>
+                                <span class="cover-reveal text7">연결해주는 mobility의 지능화에 집중하며 삶에 스며드는 솔루션을 제공하고자 합니다.</span> 
+                            </p>
+                            <p class="product">
+                                <img src="img/main_company_car.png" alt="company car image">
+                                <img src="img/main_company_robot.png" alt="company robot image">
+                            </p>
                         </div>
                     </article>
                     <article class="main-career">
@@ -289,7 +298,41 @@
                             prevEl: '.swiper-button-prev',
                         }
                     });
+                    //main-career
+                    /*function() {
+                        "user strict";
+                        if (null !== document.getElementsByClassName("main-career")) {
+                            var t = function() {
+                                var t, e = $(window).scrollTop(),
+                                n = $(".main-career");
+                                e + window.innerHeight < n.offset().top || e > n.offset().top + n.height() || (t = (e - n.offset().top + window.innerHeight) / (n.height() + window.innerHeight), n.css({
+                                    backgroundPosition: "50% " + 100 * (1 - t) + "%"
+                                }))
+                            };
+                            $(window).on("scroll", t), t()
+                        }
+                    }();*/
+                    //main-company text-color
+                    /*function() {
+                        "user strict";
+                        if (0 !== $(".main-company").length) {
+                            var t = function(t) {
+                                    var e = $(window).scrollTop(),
+                                        n = t.outerHeight(),
+                                        i = t.offset().top,
+                                        o = t.offset().top + n,
+                                        a = e + window.innerHeight > i + 10,
+                                        s = e < o - 10;
+                                    a && s && t.addClass("on")
+                                },
+                                e = function() {
+                                    t($(".main-company"))
+                                };
+                            $(window).on("scroll", e), e()
+                        }
+                    }();*/
                 });//end
+                
             </script>
         </div>
 	</body>

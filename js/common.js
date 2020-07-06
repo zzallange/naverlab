@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    
     //footer
     $('.btn_site').click(function(){
         $(this).toggleClass('on');    
