@@ -28,7 +28,7 @@ legend {font-size: 0; line-height: 0; color: transparent;}
 
 .a11y {position: absolute; left: 0; width: 0; height: 0; clip:rect(1px,1px,1px,1px)}
 
-body {font-family: 'Roboto',"Noto Sans KR",sans-serif; font-size: 75%;}
+body {font-family: 'Roboto',"Noto Sans KR",sans-serif; font-size: 12px;}
 h1,h2,h3,h4,h5,h6 {overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #333;}
 #header,#container,#footer {position: relative; width: 100%;}
 
@@ -43,7 +43,7 @@ h1,h2,h3,h4,h5,h6 {overflow: hidden; text-overflow: ellipsis; white-space: nowra
 [class*="_inner"] {margin: 0 auto; max-width: 1000px;}
 [class*="_inner"]:after {content:'';display: block;clear: both;}
 /* 공통으로 hover시 변경되는 btn은 0을 붙임 */
-[class*="btn0_"] {position: relative; z-index: 1; overflow: hidden; margin-top: 30px; width: 200px; line-height: 50px; border: 1px solid #fff; text-align: center; font-size: 16.8px; color: #fff; background: transparent; transition: border 0.12s;}
+[class*="btn0_"] {position: relative; z-index: 1; overflow: hidden; margin-top: 30px; width: 200px; line-height: 50px; border: 1px solid #fff; text-align: center; font-size: 1.35em; color: #fff; background: transparent; transition: border 0.12s;}
 [class*="btn0_"]:before {content:''; position: absolute; left: -2px; top: 0; z-index: -1; width: 0; height: 100%; background:#007aff; transition: width 0.12s;}
 [class*="btn0_"]:hover {border-color: #007aff;}
 [class*="btn0_"]:hover:before {left: 0; width: 100%;}
@@ -86,7 +86,7 @@ h1,h2,h3,h4,h5,h6 {overflow: hidden; text-overflow: ellipsis; white-space: nowra
 .header .gnb [class*="_menu"] {display: inline-block; margin-top: 30px;}
 .header .gnb [class*="_menu"] li {display: inline-block; margin-left: 40px;}
 .header .gnb [class*="_menu"] li:first-child {margin-left: 0;}
-.header .gnb [class*="_menu"] li a {position: relative; padding: 10px 0; font-size: 1.167em; font-weight: 700; letter-spacing: 1px; color: #fff}
+.header .gnb [class*="_menu"] li a {position: relative; padding: 10px 0; font-size: 1.15em; font-weight: 700; letter-spacing: 1px; color: #fff}
 .header .gnb [class*="_menu"] li a:not(.btn_language):after {content:''; position: absolute; left: -2px; bottom: 0; width: 0; height: 4px; background:#0078ff; transition: width 0.12s;}
 .header .gnb [class*="_menu"] li a:hover:after {width: 100%;}
 .header .gnb [class*="_menu"] li .btn_language {padding: 0; width: 85px; height: 30px; border: 1px solid #fff; text-align: center; font-size: 1.167em; font-weight: 300; line-height: 30px;}
@@ -246,4 +246,4 @@ h1,h2,h3,h4,h5,h6 {overflow: hidden; text-overflow: ellipsis; white-space: nowra
     
     .article_wrap {margin-top: 84px;} 
 }
-https://blog.naver.com/hai33/222019063813
+
